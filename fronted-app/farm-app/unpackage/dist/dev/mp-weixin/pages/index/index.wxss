@@ -1,0 +1,42 @@
+
+/* 添加一些基础样式 */
+.home-page {
+  padding: 24rpx;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+/* 自定义样式 */
+.bg-white-opacity-10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.active-bg-white-opacity-10:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.opacity-10 {
+  opacity: 0.1;
+}
+.opacity-90 {
+  opacity: 0.9;
+}
+
+/* 修复一些可能缺失的样式 */
+.space-y-8 > view + view {
+  margin-top: 2rem;
+}
+.grid {
+  display: grid;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+.z-10 {
+  z-index: 10;
+}
+.max-w-md {
+  max-width: 28rem;
+}

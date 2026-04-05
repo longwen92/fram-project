@@ -36,7 +36,7 @@
 
                 <text class="font-medium block mb-1">订单通知</text>
 
-                <text class="text-sm text-gray-600">订单状态变更提?/text>
+                <text class="text-sm text-gray-600">订单状态变更提醒</text>
 
               </view>
 
@@ -62,7 +62,7 @@
 
                 <text class="font-medium block mb-1">营销通知</text>
 
-                <text class="text-sm text-gray-600">促销活动、新品上?/text>
+                <text class="text-sm text-gray-600">促销活动、新品上线</text>
 
               </view>
 
@@ -88,7 +88,7 @@
 
                 <text class="font-medium block mb-1">系统通知</text>
 
-                <text class="text-sm text-gray-600">系统公告、安全提?/text>
+                <text class="text-sm text-gray-600">系统公告、安全提醒</text>
 
               </view>
 
@@ -232,7 +232,7 @@
 
               >
 
-                <option value="zh-CN">简体中?/option>
+                <option value="zh-CN">简体中文</option>
 
                 <option value="en-US">English</option>
 
@@ -366,7 +366,7 @@
 
             <button @tap="gotoAbout" class="flex items-center justify-between w-full py-3 border-b last:border-0">
 
-              <text class="font-medium">关于惠农?/text>
+              <text class="font-medium">关于惠农网</text>
 
               <text class="text-gray-400">></text>
 
@@ -418,7 +418,7 @@
 
             <text class="text-5xl mb-4">🌾</text>
 
-            <text class="text-2xl font-bold text-gray-900 block mb-2">惠农?/text>
+            <text class="text-2xl font-bold text-gray-900 block mb-2">惠农网</text>
 
             <text class="text-gray-600 block mb-4">农产品B2B电商平台</text>
 

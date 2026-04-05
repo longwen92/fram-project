@@ -214,7 +214,7 @@
 
             <text class="text-2xl font-bold block">{{ purchaserData.completionRate }}%</text>
 
-            <text class="text-sm text-gray-500">完成?/text>
+            <text class="text-sm text-gray-500">已完成</text>
 
           </view>
 
@@ -238,9 +238,9 @@
 
         <view class="flex justify-between items-center mb-6">
 
-          <text class="text-xl font-bold">供应商报?/text>
+          <text class="text-xl font-bold">供应商报价</text>
 
-          <text class="text-blue-600 font-medium">{{ quotationCount }} 个报?/text>
+          <text class="text-blue-600 font-medium">{{ quotationCount }} 个报价</text>
 
         </view>
 
@@ -282,7 +282,7 @@
 
           <text class="text-xl font-bold text-gray-700 block mb-2">暂无报价</text>
 
-          <text class="text-gray-600">成为第一个报价的供应?/text>
+          <text class="text-gray-600">成为第一个报价的供应商</text>
 
         </view>
 
@@ -306,7 +306,7 @@
 
           <view>
 
-            <text class="text-gray-500 block mb-1">状?/text>
+            <text class="text-gray-500 block mb-1">状态</text>
 
             <text :class="`font-medium ${getStatusClass(purchaseData.status)}`">
 
@@ -318,7 +318,7 @@
 
           <view>
 
-            <text class="text-gray-500 block mb-1">浏览?/text>
+            <text class="text-gray-500 block mb-1">浏览量</text>
 
             <text class="font-medium">{{ purchaseData.viewCount || 0 }}</text>
 
@@ -326,7 +326,7 @@
 
           <view>
 
-            <text class="text-gray-500 block mb-1">收藏?/text>
+            <text class="text-gray-500 block mb-1">收藏数</text>
 
             <text class="font-medium">{{ purchaseData.favoriteCount || 0 }}</text>
 

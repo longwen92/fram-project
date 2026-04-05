@@ -270,7 +270,7 @@
 
               <text class="text-2xl font-bold text-orange-700 block">12</text>
 
-              <text class="text-gray-600 text-sm">优惠?/text>
+              <text class="text-gray-600 text-sm">优惠券</text>
 
             </view>
 

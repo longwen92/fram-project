@@ -25,7 +25,8 @@
       "Bash(mv uni.promisify.adaptor.js src/)",
       "Bash(\"/c/Program Files/nodejs/node\" ./node_modules/vite/bin/vite.js build)",
       "Bash(UNI_PLATFORM=mp-weixin \"/c/Program Files/nodejs/node\" ./node_modules/vite/bin/vite.js build)",
-      "Bash(find . -name \"*.vue\" -exec sed -i \"s/码减满减\\\\?//g\" {} \\\\;)"
+      "Bash(find . -name \"*.vue\" -exec sed -i \"s/码减满减\\\\?//g\" {} \\\\;)",
+      "Bash(node -e ':*)"
     ]
   }
 }

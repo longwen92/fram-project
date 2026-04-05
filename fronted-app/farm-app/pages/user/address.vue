@@ -28,7 +28,7 @@
 
         <text class="text-2xl font-bold text-gray-700 block mb-4">暂无收货地址</text>
 
-        <text class="text-gray-600 block mb-8">添加地址，方便购?/text>
+        <text class="text-gray-600 block mb-8">添加地址，方便购物</text>
 
         <button @tap="gotoAddAddress" class="px-8 py-3 bg-green-600 text-white rounded-lg hover-bg-green-700 font-medium">
 

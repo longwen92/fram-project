@@ -40,11 +40,11 @@
 
               <view class="flex justify-between text-sm text-gray-500 mt-2">
 
-                <text>?/text>
+                <text>●</text>
 
-                <text>?/text>
+                <text>●</text>
 
-                <text>?/text>
+                <text>●</text>
 
               </view>
 
@@ -74,7 +74,7 @@
 
                 <text class="font-medium block mb-1">登录密码码</text>
 
-                <text class="text-sm text-gray-600">定期修改密码码更安?/text>
+                <text class="text-sm text-gray-600">定期修改密码更安全</text>
 
               </view>
 
@@ -98,7 +98,7 @@
 
                   <text class="font-medium mr-2">手机号验证码</text>
 
-                  <text class="text-sm text-green-600">?已绑?/text>
+                  <text class="text-sm text-green-600">已绑定</text>
 
                 </view>
 
@@ -126,9 +126,9 @@
 
                   <text class="font-medium mr-2">邮箱验证码</text>
 
-                  <text v-if="emailVerified" class="text-sm text-green-600">?已验?/text>
+                  <text v-if="emailVerified" class="text-sm text-green-600">已验证</text>
 
-                  <text v-else class="text-sm text-red-600">未验?/text>
+                  <text v-else class="text-sm text-red-600">未验证</text>
 
                 </view>
 
@@ -170,9 +170,9 @@
 
                   <text class="font-medium mr-2">支付密码码</text>
 
-                  <text v-if="hasPaymentPassword" class="text-sm text-green-600">?已设?/text>
+                  <text v-if="hasPaymentPassword" class="text-sm text-green-600">已设置</text>
 
-                  <text v-else class="text-sm text-red-600">未设?/text>
+                  <text v-else class="text-sm text-red-600">未设置</text>
 
                 </view>
 
@@ -256,7 +256,7 @@
 
         <view class="bg-white rounded-xl shadow-sm p-6">
 
-          <text class="text-xl font-bold mb-4 block">最近登录记?/text>
+          <text class="text-xl font-bold mb-4 block">最近登录记录</text>
 
           <view class="space-y-4">
 

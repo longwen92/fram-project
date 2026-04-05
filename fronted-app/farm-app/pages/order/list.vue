@@ -242,7 +242,7 @@
 
         <view class="flex space-x-2">
 
-          <button class="px-4 py-2 border rounded-lg hover-bg-gray-50">上一?/button>
+          <button class="px-4 py-2 border rounded-lg hover-bg-gray-50">上一页</button>
 
           <button class="px-4 py-2 bg-green-600 text-white rounded-lg">1</button>
 
@@ -250,7 +250,7 @@
 
           <button class="px-4 py-2 border rounded-lg hover-bg-gray-50">3</button>
 
-          <button class="px-4 py-2 border rounded-lg hover-bg-gray-50">下一?/button>
+          <button class="px-4 py-2 border rounded-lg hover-bg-gray-50">下一页</button>
 
         </view>
 

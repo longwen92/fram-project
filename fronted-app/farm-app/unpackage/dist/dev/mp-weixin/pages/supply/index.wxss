@@ -1,0 +1,10 @@
+
+
+/* 引入Tailwind类似的工具类，但uni-app不支持Tailwind，这里使用内联样式或全局样式 */
+
+/* 实际项目中需要配置uni-app支持Tailwind或使用类似样<*/
+.supply-page {
+
+  /* 基础样式 */
+}
+
