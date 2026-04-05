@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 惠农网农产品B2B电商平台设计Token */
+/* 版本: 1.0 | 日期: 2026-04-04 */
+
+/* ===== 基础样式重置 ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #262626;
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ===== 自定义滚动条 ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9D9D9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BFBFBF;
+}
+
+/* ===== 选择文字样式 ===== */
+::selection {
+  background-color: rgba(43, 140, 68, 0.2);
+  color: #262626;
+}
+
+/* ===== 链接样式 ===== */
+a {
+  color: #1890FF;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: #40A9FF;
+}
+
+a:active {
+  color: #096DD9;
+}
+
+/* ===== 按钮重置 ===== */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid #2B8C44;
+  outline-offset: 2px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ===== 输入框重置 ===== */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #2B8C44;
+  outline-offset: -1px;
+}
+
+/* ===== 图片样式 ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== 列表样式 ===== */
+ul,
+ol {
+  list-style: none;
+}
+
+/* ===== 工具类 ===== */
+.text-number {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ===== 动画类 ===== */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #F5F5F5 25%,
+    #E8E8E8 50%,
+    #F5F5F5 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+/* ===== 打印样式 ===== */
+@media print {
+  body {
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* ===== 深色模式 ===== */
+@media (prefers-color-scheme: dark) {
+  /* 可以在这里添加深色模式样式 */
+}
+
+.dark {
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #BFBFBF;
+  --color-text-tertiary: #8C8C8C;
+  --color-border-primary: #434343;
+  --color-border-secondary: #303030;
+  --color-border-light: #262626;
+  --color-background-primary: #141414;
+  --color-background-secondary: #1F1F1F;
+  --color-background-tertiary: #262626;
+  --color-background-card: #1F1F1F;
+  --color-background-overlay: rgba(0, 0, 0, 0.65);
+}

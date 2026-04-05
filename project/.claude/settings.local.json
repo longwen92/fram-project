@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(timeout 10 node node_modules/vite/bin/vite.js)"
+    ]
+  }
+}

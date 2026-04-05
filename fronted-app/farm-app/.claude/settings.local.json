@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(npm list:*)",
+      "Bash(cmd:*)",
+      "Bash(npx vite:*)",
+      "Bash(node node_modules/vite/bin/vite.js build)",
+      "Bash(xargs grep:*)",
+      "Bash(iconv --list)",
+      "Bash(iconv -f GBK -t UTF-8 \"pages/payment/index.vue\" -o \"pages/payment/index.vue.utf8\")",
+      "Bash(mv \"pages/payment/index.vue.utf8\" \"pages/payment/index.vue\")",
+      "Bash(xxd)",
+      "Bash(where node:*)",
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(npm --version)",
+      "Bash(npm view:*)",
+      "Bash(npm config:*)",
+      "Bash(UNI_PLATFORM=mp-weixin npx vite build)",
+      "Bash(mv main.js src/)",
+      "Bash(mv App.vue src/)",
+      "Bash(mv pages/ src/)",
+      "Bash(mv static/ src/)",
+      "Bash(mv uni.promisify.adaptor.js src/)",
+      "Bash(\"/c/Program Files/nodejs/node\" ./node_modules/vite/bin/vite.js build)",
+      "Bash(UNI_PLATFORM=mp-weixin \"/c/Program Files/nodejs/node\" ./node_modules/vite/bin/vite.js build)",
+      "Bash(find . -name \"*.vue\" -exec sed -i \"s/码减满减\\\\?//g\" {} \\\\;)"
+    ]
+  }
+}

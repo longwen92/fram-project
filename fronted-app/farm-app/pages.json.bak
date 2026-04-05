@@ -1,0 +1,41 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/supply/index",
+			"style": {
+				"navigationBarTitleText": "供应大厅"
+			}
+		},
+		{
+			"path": "pages/purchase/index",
+			"style": {
+				"navigationBarTitleText": "采购需求"
+			}
+		},
+		{
+			"path": "pages/cart/index",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}

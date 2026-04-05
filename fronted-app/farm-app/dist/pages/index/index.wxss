@@ -1,0 +1,1 @@
+.home-page{padding:24rpx;min-height:100vh;background-color:#f8f8f8}.bg-white-opacity-10,.active-bg-white-opacity-10:active{background-color:rgba(255,255,255,.1)}.opacity-10{opacity:.1}.opacity-90{opacity:.9}.space-y-8>view+view{margin-top:2rem}.grid{display:grid}.rounded-full{border-radius:9999px}.sticky{position:sticky}.z-10{z-index:10}.max-w-md{max-width:28rem}
