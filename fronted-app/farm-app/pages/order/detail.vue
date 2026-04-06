@@ -210,7 +210,7 @@
 
               <text class="text-gray-600">发票信息</text>
 
-              <text class="font-medium">{{ order.invoice || '不需要发? }}</text>
+              <text class="font-medium">{{ order.invoice || 不需要发票' }}</text>
 
             </view>
 
@@ -370,15 +370,15 @@ export default {
 
         paymentMethod: '微信支付',
 
-        invoice: '个人发票 - 张先?,
+        invoice: '个人发票 - 张先生',
 
         address: {
 
-          name: '张先?,
+          name: '张先生',
 
           phone: '138****8888',
 
-          fullAddress: '北京市朝阳区建国门外大街1号国贸大厦A?001?,
+          fullAddress: '北京市朝阳区建国门外大街1号国贸大厦A座1001室',
 
         },
 
@@ -390,9 +390,9 @@ export default {
 
             name: '优质大米',
 
-            spec: '10??· 五常大米',
+            spec: '10公斤· 五常大米',
 
-            supplier: '黑龙江五常粮油有限公?,
+            supplier: '黑龙江五常粮油有限公司',
 
             price: '4,800',
 
@@ -406,9 +406,9 @@ export default {
 
             name: '新鲜苹果',
 
-            spec: '5??· 红富?,
+            spec: '5公斤· 红富士',
 
-            supplier: '山东果蔬合作?,
+            supplier: '山东果蔬合作社',
 
             price: '3,200',
 
@@ -466,19 +466,19 @@ export default {
 
       const statusMap = {
 
-        pending_payment: '待付?,
+        pending_payment: '待支付',
 
-        pending_shipment: '待发?,
+        pending_shipment: '待发货',
 
-        shipped: '已发?,
+        shipped: '已发货',
 
-        completed: '已完?,
+        completed: '已完成',
 
-        cancelled: '已取?,
+        cancelled: '已取消',
 
       };
 
-      return statusMap[this.order.status] || '未知状?;
+      return statusMap[this.order.status] || '未知状态';
 
     },
 
@@ -526,15 +526,15 @@ export default {
 
       const texts = {
 
-        pending_payment: '待付?,
+        pending_payment: '待支付',
 
-        pending_shipment: '待发?,
+        pending_shipment: '待发货',
 
-        shipped: '已发?,
+        shipped: '已发货',
 
-        completed: '已完?,
+        completed: '已完成',
 
-        cancelled: '已取?,
+        cancelled: '已取消',
 
       };
 
@@ -678,13 +678,13 @@ export default {
 
       uni.showToast({
 
-        title: '跳转到物流跟踪页?,
+        title: '跳转到物流跟踪页面',
 
         icon: 'none',
 
       });
 
-      // 实际应该跳转到物流跟踪页?    },
+      // 实际应该跳转到物流跟踪页面    },
 
     cancelOrder() {
 
@@ -700,7 +700,7 @@ export default {
 
             uni.showToast({
 
-              title: '订单已取?,
+              title: '订单已取消',
 
               icon: 'success',
 
@@ -738,7 +738,7 @@ export default {
 
         title: '确认收货',
 
-        content: '请确认已收到商品且无?,
+        content: '请确认已收到商品且无误',
 
         success: (res) => {
 
@@ -782,7 +782,7 @@ export default {
 
         title: '删除订单',
 
-        content: '确定要删除此订单吗？删除后不可恢?,
+        content: '确定要删除此订单吗？删除后不可恢复',
 
         success: (res) => {
 
@@ -790,7 +790,7 @@ export default {
 
             uni.showToast({
 
-              title: '订单已删?,
+              title: '订单已删除',
 
               icon: 'success',
 

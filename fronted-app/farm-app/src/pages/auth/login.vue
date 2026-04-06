@@ -10,7 +10,7 @@
 
         <text class="text-3xl font-bold">登录账号</text>
 
-        <text class="text-gray-600 block mt-2">欢迎回到惠农?/text>
+        <text class="text-gray-600 block mt-2">欢迎回到惠农网</text>
 
       </view>
 
@@ -32,7 +32,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">手机号?/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">手机号</text>
 
               <input
 
@@ -88,7 +88,7 @@
 
                 />
 
-                <text class="ml-2 text-sm text-gray-600">记住?/text>
+                <text class="ml-2 text-sm text-gray-600">记住</text>
 
               </label>
 

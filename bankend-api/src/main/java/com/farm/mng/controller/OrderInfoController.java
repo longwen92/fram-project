@@ -52,7 +52,7 @@ public class OrderInfoController {
         wrapper.orderByDesc(OrderInfo::getCreateTime);
         IPage<OrderInfo> result = orderInfoService.page(page, wrapper);
         PageResult<OrderInfo> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 

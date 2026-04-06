@@ -48,7 +48,7 @@ public class SysPermissionController {
         wrapper.orderByAsc(SysPermission::getSortOrder);
         IPage<SysPermission> result = sysPermissionService.page(page, wrapper);
         PageResult<SysPermission> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 
@@ -56,7 +56,7 @@ public class SysPermissionController {
     public Result<List<SysPermission>> list(@RequestParam(required = false) Integer type) {
         LambdaQueryWrapper<SysPermission> wrapper = new LambdaQueryWrapper<>();
         if (type != null) {
-            wrapper.eq(SysPermission::getType, type);
+            wrapper.eq(SysPermission::getPermissionType, type);
         }
         wrapper.orderByAsc(SysPermission::getSortOrder);
         List<SysPermission> list = sysPermissionService.list(wrapper);

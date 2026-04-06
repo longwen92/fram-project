@@ -48,7 +48,7 @@ public class SysRoleController {
         wrapper.orderByDesc(SysRole::getCreateTime);
         IPage<SysRole> result = sysRoleService.page(page, wrapper);
         PageResult<SysRole> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 

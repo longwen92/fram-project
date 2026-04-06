@@ -66,13 +66,13 @@
 
           <view class="space-y-6">
 
-            <!-- 登录密码码 -->
+            <!-- 登录密码 -->
 
             <view class="flex items-center justify-between">
 
               <view>
 
-                <text class="font-medium block mb-1">登录密码码</text>
+                <text class="font-medium block mb-1">登录密码</text>
 
                 <text class="text-sm text-gray-600">定期修改密码更安全</text>
 
@@ -88,7 +88,7 @@
 
 
 
-            <!-- 手机号验证码 -->
+            <!-- 手机号验证 -->
 
             <view class="flex items-center justify-between">
 
@@ -96,7 +96,7 @@
 
                 <view class="flex items-center">
 
-                  <text class="font-medium mr-2">手机号验证码</text>
+                  <text class="font-medium mr-2">手机号验证</text>
 
                   <text class="text-sm text-green-600">已绑定</text>
 
@@ -116,7 +116,7 @@
 
 
 
-            <!-- 邮箱验证码 -->
+            <!-- 邮箱验证 -->
 
             <view class="flex items-center justify-between">
 
@@ -124,7 +124,7 @@
 
                 <view class="flex items-center">
 
-                  <text class="font-medium mr-2">邮箱验证码</text>
+                  <text class="font-medium mr-2">邮箱验证</text>
 
                   <text v-if="emailVerified" class="text-sm text-green-600">已验证</text>
 
@@ -160,7 +160,7 @@
 
 
 
-            <!-- 支付密码码 -->
+            <!-- 支付密码 -->
 
             <view class="flex items-center justify-between">
 
@@ -168,7 +168,7 @@
 
                 <view class="flex items-center">
 
-                  <text class="font-medium mr-2">支付密码码</text>
+                  <text class="font-medium mr-2">支付密码</text>
 
                   <text v-if="hasPaymentPassword" class="text-sm text-green-600">已设置</text>
 
@@ -286,7 +286,7 @@
 
               <button @tap="logoutDevice" class="text-red-600 hover-text-red-700 text-sm">
 
-                退出登?              </button>
+                退出登录              </button>
 
             </view>
 
@@ -360,7 +360,7 @@ export default {
 
             uni.showToast({
 
-              title: '验证码邮件已发?,
+              title: '验证码邮件已发送',
 
               icon: 'success',
 
@@ -438,7 +438,7 @@ export default {
 
             uni.showToast({
 
-              title: '账户已冻?,
+              title: '账户已冻结',
 
               icon: 'success',
 
@@ -466,9 +466,9 @@ export default {
 
       uni.showModal({
 
-        title: '退出设?,
+        title: '退出设备',
 
-        content: '确定要在此设备上退出登录吗?,
+        content: '确定要在此设备上退出登录吗？',
 
         success: (res) => {
 
@@ -476,7 +476,7 @@ export default {
 
             uni.showToast({
 
-              title: '设备已退?,
+              title: '设备已退出',
 
               icon: 'success',
 

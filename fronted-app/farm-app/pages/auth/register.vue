@@ -62,7 +62,7 @@
 
                   type="text"
 
-                  placeholder="请输入验证码码"
+                  placeholder="请输入验证码"
 
                   class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-green-500"
 
@@ -80,7 +80,7 @@
 
                 >
 
-                  {{ codeCountdown > 0 ? `${codeCountdown}s后重试` : '获取验证码? }}
+                  {{ codeCountdown > 0 ? `${codeCountdown}s后重试` : '获取验证码' }}
 
                 </button>
 
@@ -100,7 +100,7 @@
 
                 type="password"
 
-                placeholder="请输入密码码（6-20位字符）"
+                placeholder="请输入密码（6-20位字符）"
 
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-green-500"
 
@@ -112,11 +112,11 @@
 
 
 
-            <!-- 确认密码码 -->
+            <!-- 确认密码 -->
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">确认密码码</text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">确认密码</text>
 
               <input
 
@@ -324,7 +324,7 @@ export default {
 
       uni.showToast({
 
-        title: '验证码码已发?,
+        title: '验证码已发送',
 
         icon: 'success',
 
@@ -362,7 +362,7 @@ export default {
 
         uni.showToast({
 
-          title: '两次密码码输入不一?,
+          title: '两次密码输入不一致',
 
           icon: 'none',
 

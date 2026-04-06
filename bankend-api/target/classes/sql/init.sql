@@ -3,8 +3,8 @@
 -- 字符集: UTF8MB4
 
 -- 创建数据库
-CREATE DATABASE IF NOT EXISTS farm_mng_db DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE farm_mng_db;
+-- CREATE DATABASE IF NOT EXISTS farm_mng_db DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+-- USE farm_mng_db;
 
 -- 用户表 (扩展基础用户信息)
 CREATE TABLE IF NOT EXISTS sys_user (

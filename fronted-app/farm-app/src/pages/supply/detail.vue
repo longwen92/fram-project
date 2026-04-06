@@ -202,15 +202,15 @@
 
           <view class="flex items-center mb-2">
 
-            <text class="text-yellow-400 text-lg">⭐⭐⭐⭐?/text>
+            <text class="text-yellow-400 text-lg">⭐⭐⭐⭐</text>
 
-            <text class="ml-2 font-medium">张先?/text>
+            <text class="ml-2 font-medium">张先生</text>
 
             <text class="ml-auto text-gray-500 text-sm">2026-03-15</text>
 
           </view>
 
-          <text class="text-gray-700">大米质量非常好，煮出来香气扑鼻，家人很喜欢。会继续回购?/text>
+          <text class="text-gray-700">大米质量非常好，煮出来香气扑鼻，家人很喜欢。会继续回购</text>
 
         </view>
 
@@ -220,13 +220,13 @@
 
             <text class="text-yellow-400 text-lg">⭐⭐⭐⭐</text>
 
-            <text class="ml-2 font-medium">李女?/text>
+            <text class="ml-2 font-medium">李女士</text>
 
             <text class="ml-auto text-gray-500 text-sm">2026-03-10</text>
 
           </view>
 
-          <text class="text-gray-700">包装很结实，物流很快。米粒饱满，口感不错?/text>
+          <text class="text-gray-700">包装很结实，物流很快。米粒饱满，口感不错</text>
 
         </view>
 
@@ -260,11 +260,11 @@
 
       <button @tap="gotoChat" class="flex-1 py-3 bg-blue-600 text-white rounded-lg hover-bg-blue-700 font-medium">
 
-        联系供应?      </button>
+        联系供应商      </button>
 
       <button @tap="addToCart" class="flex-1 py-3 bg-green-600 text-white rounded-lg hover-bg-green-700 font-medium">
 
-        加入采购?      </button>
+        加入采购      </button>
 
     </view>
 

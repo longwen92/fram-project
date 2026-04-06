@@ -182,19 +182,19 @@ export default {
 
           id: 1,
 
-          name: '张先?,
+          name: '张先生',
 
           phone: '138****8888',
 
-          fullAddress: '北京市朝阳区建国门外大街1号国贸大厦A?001?,
+          fullAddress: '北京市朝阳区建国门外大街1号国贸大厦A座1001室',
 
-          province: '北京?,
+          province: '北京',
 
-          city: '北京?,
+          city: '北京',
 
-          district: '朝阳?,
+          district: '朝阳区',
 
-          detail: '国贸大厦A?001?,
+          detail: '国贸大厦A座1001室',
 
           isDefault: true,
 
@@ -204,15 +204,15 @@ export default {
 
           id: 2,
 
-          name: '李女?,
+          name: '李女士',
 
           phone: '139****9999',
 
-          fullAddress: '上海市浦东新区陆家嘴环路1000号上海中心大?,
+          fullAddress: '上海市浦东新区陆家嘴环路1000号上海中心大厦',
 
-          province: '上海?,
+          province: '上海',
 
-          city: '上海?,
+          city: '上海',
 
           district: '浦东新区',
 
@@ -226,17 +226,17 @@ export default {
 
           id: 3,
 
-          name: '王先?,
+          name: '王先生',
 
           phone: '136****6666',
 
-          fullAddress: '广东省深圳市南山区科技园科技中一路腾讯大?,
+          fullAddress: '广东省深圳市南山区科技园科技中一路腾讯大厦',
 
-          province: '广东?,
+          province: '广东',
 
-          city: '深圳?,
+          city: '深圳',
 
-          district: '南山?,
+          district: '南山区',
 
           detail: '腾讯大厦',
 

@@ -43,7 +43,7 @@
         :duration="500"
         :circular="true"
       >
-        <swiper-item v-for="(banner, index) in banners" :key="index">
+        <swiper-item v-for="(banner, index) in banners" :key="banner.id">
           <view
             class="w-full h-full flex items-center justify-center"
             :style="{ backgroundColor: banner.bgColor }"
@@ -63,7 +63,7 @@
     <view class="px-4">
       <view class="bg-white rounded-2xl p-6 shadow-sm">
         <text class="text-2xl font-bold mb-6 block">快捷入口</text>
-        <view class="grid-cols-4 gap-6">
+        <view class="grid grid-cols-4 gap-6">
           <button
             v-for="entry in quickEntries"
             :key="entry.id"
@@ -71,7 +71,8 @@
             class="flex flex-col items-center"
           >
             <view
-              :class="`w-16 h-16 ${entry.bgColor} rounded-2xl flex items-center justify-center mb-3`"
+              class="w-16 h-16 rounded-2xl flex items-center justify-center mb-3"
+              :style="{ backgroundColor: getBgColor(entry.bgColor) }"
             >
               <text class="text-2xl">{{ entry.icon }}</text>
             </view>
@@ -91,7 +92,7 @@
             <text class="ml-1">→</text>
           </button>
         </view>
-        <view class="grid-cols-4 gap-4">
+        <view class="grid grid-cols-4 gap-4">
           <view
             v-for="category in categories"
             :key="category.id"
@@ -251,7 +252,9 @@
         </button>
         <button
           @tap="gotoSupply"
-          class="px-8 py-3 border border-white text-white rounded-lg active-bg-white-opacity-10"
+          class="px-8 py-3 border border-white text-white rounded-lg"
+          style="background-color: rgba(255, 255, 255, 0.1);"
+          active-style="background-color: rgba(255, 255, 255, 0.2);"
         >
           查看平台
         </button>
@@ -271,14 +274,14 @@ export default {
         { id: 3, title: '千万供应商入驻', description: '海量资源，高效匹配', bgColor: '#047857' },
       ],
       quickEntries: [
-        { id: 1, label: '供应大厅', icon: '📦', bgColor: 'bg-green-100', path: '/pages/supply/index' },
-        { id: 2, label: '采购需求', icon: '📝', bgColor: 'bg-blue-100', path: '/pages/purchase/index' },
-        { id: 3, label: '我的订单', icon: '📋', bgColor: 'bg-yellow-100', path: '/pages/order/list' },
-        { id: 4, label: '购物车', icon: '🛒', bgColor: 'bg-purple-100', path: '/pages/cart/index' },
-        { id: 5, label: '收藏夹', icon: '❤️', bgColor: 'bg-red-100', path: '/pages/user/favorites' },
-        { id: 6, label: '地址管理', icon: '📍', bgColor: 'bg-indigo-100', path: '/pages/user/address' },
-        { id: 7, label: '客服中心', icon: '💬', bgColor: 'bg-pink-100', path: '/pages/user/settings' },
-        { id: 8, label: '安全中心', icon: '🔒', bgColor: 'bg-gray-100', path: '/pages/user/security' },
+        { id: 1, label: '供应大厅', icon: '📦', bgColor: '#DCFCE7', path: '/pages/supply/index' },
+        { id: 2, label: '采购需求', icon: '📝', bgColor: '#DBEAFE', path: '/pages/purchase/index' },
+        { id: 3, label: '我的订单', icon: '📋', bgColor: '#FEF3C7', path: '/pages/order/list' },
+        { id: 4, label: '购物车', icon: '🛒', bgColor: '#EDE9FE', path: '/pages/cart/index' },
+        { id: 5, label: '收藏夹', icon: '❤️', bgColor: '#FEE2E2', path: '/pages/user/favorites' },
+        { id: 6, label: '地址管理', icon: '📍', bgColor: '#E0E7FF', path: '/pages/user/address' },
+        { id: 7, label: '客服中心', icon: '💬', bgColor: '#FCE7F3', path: '/pages/user/settings' },
+        { id: 8, label: '安全中心', icon: '🔒', bgColor: '#F3F4F6', path: '/pages/user/security' },
       ],
       categories: [
         { id: 1, name: '水果', icon: '🍎', count: '1,284' },
@@ -298,6 +301,22 @@ export default {
     };
   },
   methods: {
+    getBgColor(bgColor) {
+      // Tailwind颜色映射到CSS颜色
+      const colorMap = {
+        'bg-green-100': '#DCFCE7',
+        'bg-green-600': '#059669',
+        'bg-green-700': '#047857',
+        'bg-blue-100': '#DBEAFE',
+        'bg-yellow-100': '#FEF3C7',
+        'bg-purple-100': '#EDE9FE',
+        'bg-red-100': '#FEE2E2',
+        'bg-indigo-100': '#E0E7FF',
+        'bg-pink-100': '#FCE7F3',
+        'bg-gray-100': '#F3F4F6',
+      };
+      return colorMap[bgColor] || '#f3f4f6';
+    },
     handleSearch () {
       if (this.searchKeyword.trim()) {
         uni.navigateTo({

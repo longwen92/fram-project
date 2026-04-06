@@ -12,7 +12,7 @@
 
         <text class="text-lg opacity-90 max-w-3xl block">
 
-          发现全国优质农产品供应信息，连接产地与市场，助力农产品高效流<        </text>
+          发现全国优质农产品供应信息，连接产地与市场，助力农产品高效流通        </text>
 
       </view>
 
@@ -44,7 +44,7 @@
 
 
 
-            <!-- 搜索<-->
+            <!-- 搜索 -->
 
             <view class="mb-6">
 
@@ -62,7 +62,7 @@
 
                 />
 
-                <!-- 搜索图标，使用uni-icons或图<-->
+                <!-- 搜索图标，使用uni-icons或图标 -->
 
                 <text class="absolute left-4 top-3.5 text-gray-400">🔍</text>
 
@@ -72,7 +72,7 @@
 
 
 
-            <!-- 分类筛<-->
+            <!-- 分类筛选 -->
 
             <view class="mb-6">
 
@@ -110,7 +110,7 @@
 
 
 
-            <!-- 地区筛<-->
+            <!-- 地区筛选 -->
 
             <view class="mb-6">
 
@@ -142,7 +142,7 @@
 
 
 
-            <!-- 价格筛<-->
+            <!-- 价格筛选 -->
 
             <view class="mb-6">
 
@@ -186,7 +186,7 @@
 
 
 
-            <!-- 其他筛<-->
+            <!-- 其他筛选 -->
 
             <view class="space-y-3">
 
@@ -204,7 +204,7 @@
 
                 />
 
-                <text class="ml-2">仅显示有</text>
+                <text class="ml-2">仅显示有货</text>
 
               </label>
 
@@ -222,7 +222,7 @@
 
                 />
 
-                <text class="ml-2">仅显示包</text>
+                <text class="ml-2">仅显示包邮</text>
 
               </label>
 
@@ -232,7 +232,7 @@
 
 
 
-          <!-- 特色供应<-->
+          <!-- 特色供应 -->
 
           <view class="bg-white rounded-xl shadow-sm p-6">
 
@@ -276,7 +276,7 @@
 
         <view class="lg-w-3-4">
 
-          <!-- 工具<-->
+          <!-- 工具栏 -->
 
           <view class="bg-white rounded-xl shadow-sm p-6 mb-6">
 
@@ -284,11 +284,10 @@
 
               <view>
 
-                <text class="text-2xl font-bold">农产品供</text>
+                <text class="text-2xl font-bold">农产品供应</text>
 
                 <text class="text-gray-600 mt-1 block">
-
-                  <<text class="font-semibold text-green-600">1,284</text> 条供应信 </text>
+                  <text class="font-semibold text-green-600">1,284</text> 条供应信息 </text>
 
               </view>
 
@@ -406,7 +405,7 @@
 
             <view class="flex space-x-2">
 
-              <button class="px-3 py-1 border rounded">上一</button>
+              <button class="px-3 py-1 border rounded">上一页</button>
 
               <button class="px-3 py-1 bg-green-600 text-white rounded">1</button>
 
@@ -414,7 +413,7 @@
 
               <button class="px-3 py-1 border rounded">3</button>
 
-              <button class="px-3 py-1 border rounded">下一</button>
+              <button class="px-3 py-1 border rounded">下一页</button>
 
             </view>
 
@@ -432,7 +431,7 @@
 
               <button class="bg-white p-4 rounded-lg shadow-sm hover-shadow-md transition-shadow text-left">
 
-                <text class="text-green-600 font-bold mb-2 block">发布采购需</text>
+                <text class="text-green-600 font-bold mb-2 block">发布采购需求</text>
 
                 <text class="text-sm text-gray-600">让供应商主动联系</text>
 
@@ -540,9 +539,9 @@ export default {
 
         { value: 'price_desc', label: '价格从高到低' },
 
-        { value: 'sales', label: '销量优' },
+        { value: 'sales', label: '销量优先' },
 
-        { value: 'time', label: '最新发' },
+        { value: 'time', label: '最新发布' },
 
       ],
 

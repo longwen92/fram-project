@@ -52,7 +52,7 @@ public class ProductController {
         wrapper.orderByDesc(Product::getCreateTime);
         IPage<Product> result = productService.page(page, wrapper);
         PageResult<Product> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 

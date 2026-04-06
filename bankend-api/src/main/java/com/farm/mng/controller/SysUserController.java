@@ -52,7 +52,7 @@ public class SysUserController {
         wrapper.orderByDesc(SysUser::getCreateTime);
         IPage<SysUser> result = sysUserService.page(page, wrapper);
         PageResult<SysUser> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 

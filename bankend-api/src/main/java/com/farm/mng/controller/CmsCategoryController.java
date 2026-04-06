@@ -48,7 +48,7 @@ public class CmsCategoryController {
         wrapper.orderByAsc(CmsCategory::getSortOrder);
         IPage<CmsCategory> result = cmsCategoryService.page(page, wrapper);
         PageResult<CmsCategory> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 

@@ -272,7 +272,7 @@
 
             <text class="font-bold">提示</text>
 
-            请确保收货信息准确无误，以免影响商品配送?          </text>
+            请确保收货信息准确无误，以免影响商品配送          </text>
 
         </view>
 
@@ -324,65 +324,65 @@ export default {
 
       provinces: [
 
-        { code: '11', name: '北京? },
+        { code: '11', name: '北京' },
 
-        { code: '12', name: '天津? },
+        { code: '12', name: '天津' },
 
-        { code: '13', name: '河北? },
+        { code: '13', name: '河北' },
 
-        { code: '14', name: '山西? },
+        { code: '14', name: '山西' },
 
         { code: '15', name: '内蒙古自治区' },
 
-        { code: '21', name: '辽宁? },
+        { code: '21', name: '辽宁' },
 
-        { code: '22', name: '吉林? },
+        { code: '22', name: '吉林' },
 
         { code: '23', name: '黑龙江省' },
 
-        { code: '31', name: '上海? },
+        { code: '31', name: '上海' },
 
-        { code: '32', name: '江苏? },
+        { code: '32', name: '江苏' },
 
-        { code: '33', name: '浙江? },
+        { code: '33', name: '浙江' },
 
-        { code: '34', name: '安徽? },
+        { code: '34', name: '安徽' },
 
-        { code: '35', name: '福建? },
+        { code: '35', name: '福建' },
 
-        { code: '36', name: '江西? },
+        { code: '36', name: '江西' },
 
-        { code: '37', name: '山东? },
+        { code: '37', name: '山东' },
 
-        { code: '41', name: '河南? },
+        { code: '41', name: '河南' },
 
-        { code: '42', name: '湖北? },
+        { code: '42', name: '湖北' },
 
-        { code: '43', name: '湖南? },
+        { code: '43', name: '湖南' },
 
-        { code: '44', name: '广东? },
+        { code: '44', name: '广东' },
 
-        { code: '45', name: '广西壮族自治? },
+        { code: '45', name: '广西壮族自治区' },
 
-        { code: '46', name: '海南? },
+        { code: '46', name: '海南' },
 
-        { code: '50', name: '重庆? },
+        { code: '50', name: '重庆' },
 
-        { code: '51', name: '四川? },
+        { code: '51', name: '四川' },
 
-        { code: '52', name: '贵州? },
+        { code: '52', name: '贵州' },
 
-        { code: '53', name: '云南? },
+        { code: '53', name: '云南' },
 
-        { code: '54', name: '西藏自治? },
+        { code: '54', name: '西藏自治区' },
 
-        { code: '61', name: '陕西? },
+        { code: '61', name: '陕西' },
 
-        { code: '62', name: '甘肃? },
+        { code: '62', name: '甘肃' },
 
-        { code: '63', name: '青海? },
+        { code: '63', name: '青海' },
 
-        { code: '64', name="宁夏回族自治? },
+        { code: '64', name="宁夏回族自治区" },
 
         { code: '65', name="新疆维吾尔自治区" },
 
@@ -396,57 +396,57 @@ export default {
 
       cityData: {
 
-        '北京?: [
+        '北京': [
 
-          { code: '1101', name: '北京? },
-
-        ],
-
-        '上海?: [
-
-          { code: '3101', name: '上海? },
+          { code: '1101', name: '北京' },
 
         ],
 
-        '广东?: [
+        '上海': [
 
-          { code: '4401', name: '广州? },
-
-          { code: '4403', name: '深圳? },
-
-          { code: '4404', name: '珠海? },
-
-          { code: '4405', name: '汕头? },
-
-          { code: '4406', name: '佛山? },
+          { code: '3101', name: '上海' },
 
         ],
 
-        '江苏?: [
+        '广东': [
 
-          { code: '3201', name: '南京? },
+          { code: '4401', name: '广州' },
 
-          { code: '3202', name: '无锡? },
+          { code: '4403', name: '深圳' },
 
-          { code: '3203', name: '徐州? },
+          { code: '4404', name: '珠海' },
 
-          { code: '3204', name: '常州? },
+          { code: '4405', name: '汕头' },
 
-          { code: '3205', name: '苏州? },
+          { code: '4406', name: '佛山' },
 
         ],
 
-        '浙江?: [
+        '江苏': [
 
-          { code: '3301', name: '杭州? },
+          { code: '3201', name: '南京' },
 
-          { code: '3302', name: '宁波? },
+          { code: '3202', name: '无锡' },
 
-          { code: '3303', name: '温州? },
+          { code: '3203', name: '徐州' },
 
-          { code: '3304', name: '嘉兴? },
+          { code: '3204', name: '常州' },
 
-          { code: '3305', name: '湖州? },
+          { code: '3205', name: '苏州' },
+
+        ],
+
+        '浙江': [
+
+          { code: '3301', name: '杭州' },
+
+          { code: '3302', name: '宁波' },
+
+          { code: '3303', name: '温州' },
+
+          { code: '3304', name: '嘉兴' },
+
+          { code: '3305', name: '湖州' },
 
         ],
 
@@ -456,45 +456,45 @@ export default {
 
       districtData: {
 
-        '广州?: [
+        '广州': [
 
-          { code: '440103', name: '荔湾? },
+          { code: '440103', name: '荔湾区' },
 
-          { code: '440104', name: '越秀? },
+          { code: '440104', name: '越秀区' },
 
-          { code: '440105', name: '海珠? },
+          { code: '440105', name: '海珠区' },
 
-          { code: '440106', name: '天河? },
+          { code: '440106', name: '天河区' },
 
-          { code: '440111', name: '白云? },
-
-        ],
-
-        '深圳?: [
-
-          { code: '440303', name: '罗湖? },
-
-          { code: '440304', name: '福田? },
-
-          { code: '440305', name: '南山? },
-
-          { code: '440306', name: '宝安? },
-
-          { code: '440307', name: '龙岗? },
+          { code: '440111', name: '白云区' },
 
         ],
 
-        '杭州?: [
+        '深圳': [
 
-          { code: '330102', name: '上城? },
+          { code: '440303', name: '罗湖区' },
 
-          { code: '330103', name: '下城? },
+          { code: '440304', name: '福田区' },
 
-          { code: '330104', name: '江干? },
+          { code: '440305', name: '南山区' },
 
-          { code: '330105', name: '拱墅? },
+          { code: '440306', name: '宝安区' },
 
-          { code: '330106', name: '西湖? },
+          { code: '440307', name: '龙岗区' },
+
+        ],
+
+        '杭州': [
+
+          { code: '330102', name: '上城区' },
+
+          { code: '330103', name: '下城区' },
+
+          { code: '330104', name: '江干区' },
+
+          { code: '330105', name: '拱墅区' },
+
+          { code: '330106', name: '西湖区' },
 
         ],
 
@@ -566,17 +566,17 @@ export default {
 
         this.form = {
 
-          name: '张先?,
+          name: '张先生',
 
           phone: '13800138000',
 
-          province: '广东?,
+          province: '广东',
 
-          city: '广州?,
+          city: '广州',
 
-          district: '天河?,
+          district: '天河区',
 
-          detail: '珠江新城华夏?0号富力中心大?,
+          detail: '珠江新城华夏10号富力中心大厦',
 
           tag: '公司',
 
@@ -662,13 +662,13 @@ export default {
 
 
 
-      // 验证码手机号?      const phoneRegex = /^1[3-9]\d{9}$/;
+      // 验证手机号      const phoneRegex = /^1[3-9]\d{9}$/;
 
       if (!phoneRegex.test(this.form.phone)) {
 
         uni.showToast({
 
-          title: '请输入正确的手机号?,
+          title: '请输入正确的手机号',
 
           icon: 'none',
 
@@ -694,7 +694,7 @@ export default {
 
       uni.showLoading({
 
-        title: '保存?..',
+        title: '保存中...',
 
       });
 
@@ -740,7 +740,7 @@ export default {
 
             uni.showLoading({
 
-              title: '删除?..',
+              title: '删除中...',
 
             });
 

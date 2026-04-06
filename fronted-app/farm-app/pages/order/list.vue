@@ -64,7 +64,7 @@
 
         <button @tap="gotoSupply" class="px-8 py-3 bg-green-600 text-white rounded-lg hover-bg-green-700 font-medium">
 
-          去逛?        </button>
+          去逛逛        </button>
 
       </view>
 
@@ -278,15 +278,15 @@ export default {
 
         { id: 'all', label: '全部', count: 12 },
 
-        { id: 'pending_payment', label: '待付?, count: 2 },
+        { id: 'pending_payment', label: '待支付', count: 2 },
 
-        { id: 'pending_shipment', label: '待发?, count: 3 },
+        { id: 'pending_shipment', label: '待发货', count: 3 },
 
-        { id: 'shipped', label: '已发?, count: 4 },
+        { id: 'shipped', label: '已发货', count: 4 },
 
-        { id: 'completed', label: '已完?, count: 3 },
+        { id: 'completed', label: '已完成', count: 3 },
 
-        { id: 'cancelled', label: '已取?, count: 0 },
+        { id: 'cancelled', label: '已取消', count: 0 },
 
       ],
 
@@ -316,7 +316,7 @@ export default {
 
               name: '优质大米',
 
-              spec: '10??· 五常大米',
+              spec: '10公斤· 五常大米',
 
               price: '4,800',
 
@@ -330,7 +330,7 @@ export default {
 
               name: '新鲜苹果',
 
-              spec: '5??· 红富?,
+              spec: '5公斤· 红富士',
 
               price: '3,200',
 
@@ -366,7 +366,7 @@ export default {
 
               name: '有机蔬菜',
 
-              spec: '2??· 混合?,
+              spec: '2公斤· 混合蔬菜',
 
               price: '2,500',
 
@@ -402,7 +402,7 @@ export default {
 
               name: '五常大米',
 
-              spec: '5??· 特级',
+              spec: '5公斤· 特级',
 
               price: '5,200',
 
@@ -436,9 +436,9 @@ export default {
 
               id: 105,
 
-              name: '红富士苹?,
+              name: '红富士苹果',
 
-              spec: '2??· 一?,
+              spec: '2公斤· 一级',
 
               price: '3,200',
 
@@ -504,15 +504,15 @@ export default {
 
       const texts = {
 
-        pending_payment: '待付?,
+        pending_payment: '待支付',
 
-        pending_shipment: '待发?,
+        pending_shipment: '待发货',
 
-        shipped: '已发?,
+        shipped: '已发货',
 
-        completed: '已完?,
+        completed: '已完成',
 
-        cancelled: '已取?,
+        cancelled: '已取消',
 
       };
 
@@ -552,7 +552,7 @@ export default {
 
           if (res.confirm) {
 
-            // 更新订单状?            const order = this.orders.find(o => o.id === id);
+            // 更新订单状态            const order = this.orders.find(o => o.id === id);
 
             if (order) {
 
@@ -598,7 +598,7 @@ export default {
 
           if (res.confirm) {
 
-            // 更新订单状?            const order = this.orders.find(o => o.id === id);
+            // 更新订单状态            const order = this.orders.find(o => o.id === id);
 
             if (order) {
 
@@ -608,7 +608,7 @@ export default {
 
             uni.showToast({
 
-              title: '订单已取?,
+              title: '订单已取消',
 
               icon: 'success',
 

@@ -54,7 +54,7 @@
 
                 <view class="flex items-center mb-1">
 
-                  <text class="font-bold">张先?/text>
+                  <text class="font-bold">张先生</text>
 
                   <text class="ml-4 text-gray-600">138****8888</text>
 

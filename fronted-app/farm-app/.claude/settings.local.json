@@ -26,7 +26,19 @@
       "Bash(\"/c/Program Files/nodejs/node\" ./node_modules/vite/bin/vite.js build)",
       "Bash(UNI_PLATFORM=mp-weixin \"/c/Program Files/nodejs/node\" ./node_modules/vite/bin/vite.js build)",
       "Bash(find . -name \"*.vue\" -exec sed -i \"s/码减满减\\\\?//g\" {} \\\\;)",
-      "Bash(node -e ':*)"
+      "Bash(node -e ':*)",
+      "Bash(node _fix_corruption.js)",
+      "Bash(node _fix_corruption2.js)",
+      "Bash(cp:*)",
+      "Bash(grep -rn '\\\\\\\\\\\\\\\\:' \"D:/longlw-code/ui/fronted-app/farm-app/dist/\")",
+      "Bash(npm -v)",
+      "Bash(node:*)",
+      "Bash(C:\\\\Program Files\\\\nodejs\\\\node.exe:*)",
+      "Bash(\"C:\\\\Program Files\\\\nodejs\\\\npm.cmd\" run build)",
+      "Bash(find:*)",
+      "WebSearch",
+      "Bash(grep -n \":[^']*?\\\\,$\" src/pages/purchase/detail.vue)",
+      "Bash(chmod +x fix_strings.sh)"
     ]
   }
 }

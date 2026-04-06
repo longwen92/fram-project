@@ -49,7 +49,7 @@ public class SysDeptController {
         wrapper.orderByAsc(SysDept::getSortOrder);
         IPage<SysDept> result = sysDeptService.page(page, wrapper);
         PageResult<SysDept> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 

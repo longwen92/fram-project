@@ -32,7 +32,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">手机号?/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">手机号</text>
 
               <input
 
@@ -54,7 +54,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">验证码?/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">验证码</text>
 
               <view class="flex gap-2">
 
@@ -94,7 +94,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">新密码?/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">新密码</text>
 
               <input
 
@@ -116,7 +116,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">确认新密码?/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">确认新密码</text>
 
               <input
 
@@ -176,9 +176,9 @@
 
           <text class="text-blue-800 text-sm block">
 
-            <text class="font-bold">提示?/text>
+            <text class="font-bold">提示</text>
 
-            请输入注册时使用的手机号号，系统将发送验证码码到该手机号号?          </text>
+            请输入注册时使用的手机号号，系统将发送验证码码到该手机号号          </text>
 
         </view>
 

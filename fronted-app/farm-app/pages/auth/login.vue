@@ -94,7 +94,7 @@
 
               <button @tap="gotoForgotPassword" class="text-sm text-green-600 hover-text-green-700">
 
-                忘记密码码?              </button>
+                忘记密码?              </button>
 
             </view>
 

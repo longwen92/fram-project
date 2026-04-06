@@ -49,7 +49,7 @@ public class SysMenuController {
         wrapper.orderByAsc(SysMenu::getSortOrder);
         IPage<SysMenu> result = sysMenuService.page(page, wrapper);
         PageResult<SysMenu> pageResult = new PageResult<>(
-                result.getRecords(), result.getTotal(), result.getSize(), result.getCurrent());
+                result.getRecords(), result.getTotal(), (int) result.getCurrent(), (int) result.getSize());
         return Result.success(pageResult);
     }
 

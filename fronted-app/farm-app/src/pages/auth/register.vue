@@ -32,7 +32,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">手机号?/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">手机号</text>
 
               <input
 
@@ -54,7 +54,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">验证码?/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">验证码</text>
 
               <view class="flex gap-2">
 
@@ -150,9 +150,9 @@
 
                 >
 
-                  <text class="block text-lg mb-1">👨‍?/text>
+                  <text class="block text-lg mb-1">👨‍🌾</text>
 
-                  <text class="font-medium">供应?/text>
+                  <text class="font-medium">供应</text>
 
                 </button>
 

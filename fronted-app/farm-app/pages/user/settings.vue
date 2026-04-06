@@ -440,7 +440,7 @@
 
         >
 
-          退出登?        </button>
+          退出登录        </button>
 
       </view>
 
@@ -496,11 +496,11 @@ export default {
 
       const labels = {
 
-        14: '?,
+        14: '小',
 
         16: '标准',
 
-        18: '?,
+        18: '大',
 
         20: '特大',
 
@@ -520,7 +520,7 @@ export default {
 
         title: '清理缓存',
 
-        content: '确定要清理缓存吗?,
+        content: '确定要清理缓存吗？',
 
         success: (res) => {
 
@@ -530,7 +530,7 @@ export default {
 
             uni.showToast({
 
-              title: '缓存已清?,
+              title: '缓存已清理',
 
               icon: 'success',
 
@@ -598,9 +598,9 @@ export default {
 
       uni.showModal({
 
-        title: '确认退?,
+        title: '确认退出',
 
-        content: '确定要退出登录吗?,
+        content: '确定要退出登录吗？',
 
         success: (res) => {
 
@@ -608,7 +608,7 @@ export default {
 
             uni.showToast({
 
-              title: '已退出登?,
+              title: '已退出登录',
 
               icon: 'success',
 

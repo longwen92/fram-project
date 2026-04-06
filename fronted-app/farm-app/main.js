@@ -1,5 +1,5 @@
 import './polyfill'
-import App from './src/App'
+import App from './App'
 
 console.log('Main.js loading...')
 

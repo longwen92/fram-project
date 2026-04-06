@@ -43,15 +43,13 @@
         :duration="500"
         :circular="true"
       >
-        <swiper-item v-for="(banner, index) in banners" :key="index">
+        <swiper-item v-for="(banner) in banners" :key="banner.id">
           <view
             class="w-full h-full flex items-center justify-center"
-            :style="{ backgroundColor: banner.bgColor }"
+            :style="'background:' + banner.styleBg"
           >
             <view class="text-center text-white px-8">
-              <text class="text-3xl font-bold block mb-2">{{
-                banner.title
-              }}</text>
+              <text class="text-3xl font-bold block mb-2">{{ banner.title }}</text>
               <text class="text-lg opacity-90">{{ banner.description }}</text>
             </view>
           </view>
@@ -266,19 +264,19 @@ export default {
     return {
       searchKeyword: '',
       banners: [
-        { id: 1, title: '新鲜农产品直供', description: '源头直采，品质保证', bgColor: '#10B981' },
-        { id: 2, title: '全国冷链配送', description: '新鲜直达，全程可溯', bgColor: '#059669' },
-        { id: 3, title: '千万供应商入驻', description: '海量资源，高效匹配', bgColor: '#047857' },
+        { id: 1, title: '新鲜农产品直供', description: '源头直采，品质保证', styleBg: '#10B981' },
+        { id: 2, title: '全国冷链配送', description: '新鲜直达，全程可溯', styleBg: '#059669' },
+        { id: 3, title: '千万供应商入驻', description: '海量资源，高效匹配', styleBg: '#047857' },
       ],
       quickEntries: [
-        { id: 1, label: '供应大厅', icon: '📦', bgColor: 'bg-green-100', path: '/pages/supply/index' },
-        { id: 2, label: '采购需求', icon: '📝', bgColor: 'bg-blue-100', path: '/pages/purchase/index' },
-        { id: 3, label: '我的订单', icon: '📋', bgColor: 'bg-yellow-100', path: '/pages/order/list' },
-        { id: 4, label: '购物车', icon: '🛒', bgColor: 'bg-purple-100', path: '/pages/cart/index' },
-        { id: 5, label: '收藏夹', icon: '❤️', bgColor: 'bg-red-100', path: '/pages/user/favorites' },
-        { id: 6, label: '地址管理', icon: '📍', bgColor: 'bg-indigo-100', path: '/pages/user/address' },
-        { id: 7, label: '客服中心', icon: '💬', bgColor: 'bg-pink-100', path: '/pages/user/settings' },
-        { id: 8, label: '安全中心', icon: '🔒', bgColor: 'bg-gray-100', path: '/pages/user/security' },
+        { id: 1, label: '供应大厅', icon: '📦', bgColor: '#DCFCE7', path: '/pages/supply/index' },
+        { id: 2, label: '采购需求', icon: '📝', bgColor: '#DBEAFE', path: '/pages/purchase/index' },
+        { id: 3, label: '我的订单', icon: '📋', bgColor: '#FEF3C7', path: '/pages/order/list' },
+        { id: 4, label: '购物车', icon: '🛒', bgColor: '#EDE9FE', path: '/pages/cart/index' },
+        { id: 5, label: '收藏夹', icon: '❤️', bgColor: '#FEE2E2', path: '/pages/user/favorites' },
+        { id: 6, label: '地址管理', icon: '📍', bgColor: '#E0E7FF', path: '/pages/user/address' },
+        { id: 7, label: '客服中心', icon: '💬', bgColor: '#FCE7F3', path: '/pages/user/settings' },
+        { id: 8, label: '安全中心', icon: '🔒', bgColor: '#F3F4F6', path: '/pages/user/security' },
       ],
       categories: [
         { id: 1, name: '水果', icon: '🍎', count: '1,284' },

@@ -38,7 +38,7 @@
 
                 type="tel"
 
-                placeholder="请输入注册手机号号"
+                placeholder="请输入注册手机号"
 
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-green-500"
 
@@ -62,7 +62,7 @@
 
                   type="text"
 
-                  placeholder="请输入验证码码"
+                  placeholder="请输入验证码"
 
                   class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-green-500"
 
@@ -178,7 +178,7 @@
 
             <text class="font-bold">提示</text>
 
-            请输入注册时使用的手机号号，系统将发送验证码码到该手机号号?          </text>
+            请输入注册时使用的手机号号，系统将发送验证码到该手机号。          </text>
 
         </view>
 
@@ -262,7 +262,7 @@ export default {
 
       uni.showToast({
 
-        title: '验证码码已发?,
+        title: '验证码已发送',
 
         icon: 'success',
 
@@ -300,7 +300,7 @@ export default {
 
         uni.showToast({
 
-          title: '两次密码码输入不一?,
+          title: '两次密码输入不一致',
 
           icon: 'none',
 
@@ -316,7 +316,7 @@ export default {
 
         uni.showToast({
 
-          title: '密码码长度至少6?,
+          title: '密码长度至少6?,
 
           icon: 'none',
 
@@ -332,7 +332,7 @@ export default {
 
       uni.showToast({
 
-        title: '密码码重置成功',
+        title: '密码重置成功',
 
         icon: 'success',
 

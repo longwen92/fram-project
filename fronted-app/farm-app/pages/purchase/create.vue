@@ -112,15 +112,15 @@
 
                 >
 
-                  <option value="吨>吨/option>
+                  <option value="吨">吨</option>
 
                   <option value="公斤">公斤</option>
 
-                  <option value="箱>箱/option>
+                  <option value="箱">箱</option>
 
-                  <option value="袋>袋/option>
+                  <option value="袋">袋</option>
 
-                  <option value="件>件/option>
+                  <option value="件">件</option>
 
                 </select>
 
@@ -134,7 +134,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-1">预算范围（元）/text>
+              <text class="block text-sm font-medium text-gray-700 mb-1">预算范围（元）</text>
 
               <view class="flex items-center gap-2">
 
@@ -142,7 +142,7 @@
 
                   type="number"
 
-                  placeholder="最低预算
+                  placeholder="最低预算"
 
                   class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-green-500"
 
@@ -156,7 +156,7 @@
 
                   type="number"
 
-                  placeholder="最高预算
+                  placeholder="最高预算"
 
                   class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-green-500"
 
@@ -222,7 +222,7 @@
 
             <view>
 
-              <text class="block text-sm font-medium text-gray-700 mb-2">紧急程度/text>
+              <text class="block text-sm font-medium text-gray-700 mb-2">紧急程度</text>
 
               <view class="flex gap-3">
 
@@ -286,7 +286,7 @@
 
                   />
 
-                  <text class="ml-2">一次性采购/text>
+                  <text class="ml-2">一次性采购</text>
 
                 </label>
 
@@ -334,7 +334,7 @@
 
               />
 
-              <text class="text-sm text-gray-500 mt-1 block">供应商将通过此联系方式与您联系/text>
+              <text class="text-sm text-gray-500 mt-1 block">供应商将通过此联系方式与您联系</text>
 
             </view>
 
@@ -356,7 +356,7 @@
 
                 />
 
-                <text class="ml-2">公开采购需求（所有供应商可见）/text>
+                <text class="ml-2">公开采购需求（所有供应商可见）</text>
 
               </label>
 
@@ -388,7 +388,7 @@
 
           >
 
-            发布采购需?          </button>
+            发布采购需求          </button>
 
         </view>
 
@@ -418,7 +418,7 @@ export default {
 
         quantity: '',
 
-        unit: '?,
+        unit: '吨',
 
         minBudget: '',
 
@@ -452,7 +452,7 @@ export default {
 
         { id: '6', name: '茶叶', icon: '🍵' },
 
-        { id: '7', name: '中药?, icon: '🌿' },
+        { id: '7', name: '中药', icon: '🌿' },
 
         { id: '8', name: '坚果', icon: '🥜' },
 
@@ -460,19 +460,19 @@ export default {
 
       provinces: [
 
-        '北京?, '天津?, '河北?, '山西?, '内蒙古自治区',
+        '北京', '天津', '河北', '山西', '内蒙古自治区',
 
-        '辽宁?, '吉林?, '黑龙江省', '上海?, '江苏?,
+        '辽宁', '吉林', '黑龙江省', '上海', '江苏',
 
-        '浙江?, '安徽?, '福建?, '江西?, '山东?,
+        '浙江', '安徽', '福建', '江西', '山东',
 
-        '河南?, '湖北?, '湖南?, '广东?, '广西壮族自治?,
+        '河南', '湖北', '湖南', '广东', '广西壮族自治区',
 
-        '海南?, '重庆?, '四川?, '贵州?, '云南?,
+        '海南', '重庆', '四川', '贵州', '云南',
 
-        '西藏自治?, '陕西?, '甘肃?, '青海?, '宁夏回族自治?,
+        '西藏自治区', '陕西', '甘肃', '青海', '宁夏回族自治区',
 
-        '新疆维吾尔自治区', '台湾?, '香港特别行政?, '澳门特别行政?,
+        '新疆维吾尔自治区', '台湾', '香港特别行政区', '澳门特别行政区',
 
       ],
 
@@ -484,7 +484,7 @@ export default {
 
     submitPurchase() {
 
-      // 简单验?      if (!this.form.category) {
+      // 简单验证      if (!this.form.category) {
 
         uni.showToast({
 
@@ -496,13 +496,13 @@ export default {
 
         return;
 
-      }
+      },
 
       if (!this.form.name) {
 
         uni.showToast({
 
-          title: '请输入商品名?,
+          title: '请输入商品名称',
 
           icon: 'none',
 
@@ -510,13 +510,13 @@ export default {
 
         return;
 
-      }
+      },
 
       if (!this.form.quantity) {
 
         uni.showToast({
 
-          title: '请输入采购数?,
+          title: '请输入采购数量',
 
           icon: 'none',
 
@@ -524,15 +524,14 @@ export default {
 
         return;
 
-      }
-
+      },
 
 
       uni.showModal({
 
         title: '确认发布',
 
-        content: '确认发布采购需求吗?,
+        content: '确认发布采购需求吗？',
 
         success: (res) => {
 
@@ -588,5 +587,5 @@ export default {
 
 }
 
-</style></result>
+</style>
 

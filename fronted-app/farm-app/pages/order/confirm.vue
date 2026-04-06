@@ -248,7 +248,7 @@
 
             <button @tap="toggleInvoice" class="text-green-600 hover-text-green-700">
 
-              {{ showInvoice ? '不需要发? : '需要发? }}
+              {{ showInvoice ? '不需要发票' : '需要发票' }}
 
             </button>
 
@@ -322,7 +322,7 @@
 
                 type="text"
 
-                :placeholder="invoice.type === 'personal' ? '请输入个人姓? : '请输入发票抬?"
+                :placeholder="invoice.type === 'personal' ? '请输入个人姓名' : '请输入发票抬头'"
 
                 class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus-ring-green-500"
 
@@ -398,9 +398,9 @@ export default {
 
           name: '优质大米',
 
-          spec: '10??· 五常大米',
+          spec: '10公斤· 五常大米',
 
-          supplier: '黑龙江五常粮油有限公?,
+          supplier: '黑龙江五常粮油有限公司',
 
           price: '4,800',
 
@@ -414,9 +414,9 @@ export default {
 
           name: '新鲜苹果',
 
-          spec: '5??· 红富?,
+          spec: '5公斤· 红富士',
 
-          supplier: '山东果蔬合作?,
+          supplier: '山东果蔬合作社',
 
           price: '3,200',
 
